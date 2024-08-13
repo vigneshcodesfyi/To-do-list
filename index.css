@@ -1,0 +1,229 @@
+ [class^="tasklist"] {
+
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+#mode{
+
+    width:max-content;
+}
+
+.version{
+
+    position: relative;
+
+background-color: beige;
+}
+.closeicon{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+}
+.taskcontent{
+
+width: 80%;
+padding: 2px;
+}
+
+.button{
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    
+}
+
+button{
+border-radius: 5px;
+padding: 10px;
+}
+main{
+
+    border: 2px solid black;
+
+}
+
+.Edit{
+    background-color: rgb(134, 184, 231);
+}
+
+.Delete{
+
+    background-color: red;
+}
+.View{
+    background-color: rgb(209, 97, 12);
+
+
+}
+header{
+    color: white;
+padding: 10px;
+    background-color: red;
+   
+    width: max-content;
+} 
+
+#inputvalue{
+
+width: 80%;
+padding: 10px;
+}
+p{
+    overflow-x: hidden;  
+    overflow-y: visible;
+        padding: 10px;
+    width: 90%;
+}
+
+#add{
+
+    padding: 10px;
+}
+
+.container{
+
+    display: flex;
+    justify-content: center;
+}
+#inputvalue:active{
+
+    background-color: black;
+color: white  ;
+}
+
+#add:hover{
+background-color:rgb(55, 99, 200) ;
+}
+
+
+@media only screen and (max-width: 599px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav {
+        font-size: 12px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    [class^="tasklist"] {
+
+        border: 2px solid black;
+    
+        display: flex;
+        width: 100%;
+        flex-direction: column;      
+        /* align-items: stretch;     */
+    
+    }
+
+    .button{
+
+        display: flex;
+justify-content: space-around;   
+width: 50%;
+        
+    }
+
+    #inputvalue{
+
+        width: 50%;
+        padding: 10px;
+        }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    body {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .nav {
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+    [class^="tasklist"] {
+
+        border: 2px solid black;
+    
+        display: flex;
+        width: 100%;
+        flex-direction: column;      
+        /* align-items: stretch;     */
+    
+    }
+
+    .button{
+
+        display: flex;
+justify-content: space-around;   
+     width: 50%;
+    
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .nav {
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+        padding: 25px;
+    }
+
+    .container {
+        width: 70%;
+        margin: auto;
+        padding: 25px;
+    }
+
+    .nav {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 25px;
+    }
+}
